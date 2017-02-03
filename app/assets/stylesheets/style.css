@@ -18,8 +18,19 @@ body {
 }
 
 .container-fluid {
-	margin: 50px 100px 0px 100px;
-	
+    margin: 50px 100px 0px 100px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container-fluid {
+        margin: 25px 50px 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container-fluid {
+        margin: 5px 5px 0px 5px;
+    }
 }
 
 div.transbox {
