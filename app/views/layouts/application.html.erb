@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheLordOftheRails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  </head>
+
+  <body>
+  <div id="main-title">
+    <h1>The Lord of the Rails</h1>
+  </div>
+<div id="navbar">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav">
+        <li>
+          <a href="#"><%= link_to "Home", root_path %></a>
+        </li>
+        <li>
+          <a href="#"><%= link_to "Projects", projects_path %></a>
+        </li>
+        <li>
+          <a href="#"><%= link_to "Contact", contact_path %></a>
+        </li>
+        <li class="dropdown pull-right open">
+          <br /><br />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<content>
+  <div class="container-fluid">
+    <div class="transbox">
+      <%= yield %>
+    </div>
+  </div>
+</content>
+  </body>
+</html>
