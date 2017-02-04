@@ -15,6 +15,7 @@ body {
 
 .nav li {
 	display: inline-block;
+
 }
 
 .container-fluid {
@@ -29,7 +30,7 @@ body {
 
 @media only screen and (max-width: 800px) {
     .container-fluid {
-        margin: 5px 5px 0px 5px;
+        margin: 1px 1px 0px 5px;
     }
 }
 
