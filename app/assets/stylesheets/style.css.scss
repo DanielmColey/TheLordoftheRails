@@ -14,8 +14,8 @@ body {
 }
 
 .nav li {
-	display: inline-block;
-
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .container-fluid {
