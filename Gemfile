@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
 
   gem 'byebug', platform: :mri
+  gem 'simplecov', '~> 0.12.0'
 end
 
 group :development do
